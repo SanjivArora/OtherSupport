@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vnet-name": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "vnet-ip-prefix": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "vnet-new-or-existing": {
+            "value": "new"
+        },
+        "bastion-subnet-ip-prefix": {
+            "value": "## TO BE DEFINED ##" 
+        },
+        "bastion-host-name": {
+            "value": "## TO BE DEFINED ##" 
+        },
+        "location": {
+            "value": "## TO BE DEFINED ##" 
+        }          
+    }
+}

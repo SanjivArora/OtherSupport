@@ -1,0 +1,9 @@
+# secrets
+**/*.pfx
+**/*.cer
+
+# autosaves
+.vscode
+
+# local test folders
+/scratch

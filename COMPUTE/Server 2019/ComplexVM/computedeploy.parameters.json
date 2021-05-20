@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "australiaeast"
+        },
+        "networkInterfaceName": {
+            "value": "testnic"
+        },
+        "subnetName": {
+            "value": "testsubnet"
+        },
+        "virtualNetworkName": {
+            "value": "testvnet"
+        },
+        "VirtualNetworkResourceGroup": {  
+            "value": "testrg" 
+        }, 
+        "addressPrefixes": {
+            "value": [
+                "10.0.40.1/24"
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "testsubnet",
+                    "properties": {
+                        "addressPrefix": "10.0.40.1/24"
+                    }
+                }
+            ]
+        },
+        "publicIpAddressName": {
+            "value": "testpublic"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "testvm"
+        },
+        "virtualMachineComputerName": {
+            "value": "testvm"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B2s"
+        },
+        "adminUsername": {
+            "value": "AzAdministrator"
+        },
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/0a50370f-03dc-4e2e-9427-ec874b508cdd/resourceGroups/IaC-ARMDeployTest-RG/providers/Microsoft.KeyVault/vaults/IaC-Pipeline-KeyVaultBO"
+                },
+                "secretName": "AzAdministrator"
+            }
+        },
+        "patchMode": {
+            "value": "AutomaticByOS"
+        },
+        "enableHotpatching": {
+            "value": false
+        },
+        "autoShutdownStatus": {
+            "value": "Disabled"
+        },
+        "autoShutdownTime": {
+            "value": "19:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "New Zealand Standard Time"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownNotificationLocale": {
+            "value": "en"
+        },
+        "autoShutdownNotificationEmail": {
+            "value": "boriley@ricoh.co.nz"
+        },
+        "resourceTags": {
+            "value": {
+                "Environment": "test",
+                "Application": "test"
+    }
+        }
+    }
+}

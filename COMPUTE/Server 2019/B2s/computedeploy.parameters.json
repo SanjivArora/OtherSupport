@@ -1,0 +1,41 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUsername": {
+            "value": "AzAdministrator"
+        },
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "## TO BE DEFINED ##"
+                },
+                "secretName": "## TO BE DEFINED ##"
+            }
+        },
+        "dnsLabelPrefix": {
+            "value": "[toLower(concat(parameters('vmName'),'-', uniqueString(resourceGroup().id, parameters('vmName'))))]"
+        },
+        "publicIpName": {
+            "value": "myPublicIP"
+        },
+        "publicIPAllocationMethod": {
+            "value": "Dynamic"
+        },
+        "publicIpSku": {
+            "value": "Basic"
+        },
+        "OSVersion": {
+            "value": "2019-Datacenter"
+        },
+        "vmSize": {
+            "value": "Standard_D4_v4"
+        },
+        "location": {
+            "value": "australiaeast"
+        },
+        "vmName": {
+            "value": "simple-vm"
+        }
+    }
+}

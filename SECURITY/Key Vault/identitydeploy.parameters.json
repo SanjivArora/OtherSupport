@@ -1,0 +1,44 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.1",
+    "parameters": {
+        "keyVaultName": {
+            "value": "kv-boriley-02"
+        },
+        "location": {
+            "value": "australiaeast"
+        },
+        "enabledForDeployment": {
+            "value": true
+        },
+        "enabledForDiskEncryption": {
+            "value": true
+        },
+        "enabledForTemplateDeployment": {
+            "value": true
+        },
+        "tenantId": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "objectId": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "keysPermissions": {
+            "value": [
+                "list",
+                "get",
+                "create"
+            ]
+        },
+        "secretsPermissions": {
+            "value": [
+                "list",
+                "get",
+                "set"
+            ]
+        },
+        "skuName": {
+            "value": "Standard"
+        }
+    }
+}
