@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- feature/ARM-testDeployment
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -23,12 +23,12 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'IaC_ARM_Template_Dev'
-    subscriptionId: 'fb7c94b5-7744-429b-a7ae-db1458359f71'
+    azureResourceManagerConnection: 'SP_DevTestKXU'
+    subscriptionId: 'c23ad7d1-9c6e-4c97-b9c6-758565617d5d'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'IaC-ARMDeployTest-RG'
     location: 'Australia East'
     templateLocation: 'Linked artifact'
-    csmFile: '/home/vsts/work/1/a/azuredeploy.json'
-    csmParametersFile: '/home/vsts/work/1/a/azuredeploy.parameters.json'
+    csmFile: '/home/vsts/work/1/a/identitydeploy.json'
+    csmParametersFile: '/home/vsts/work/1/a/identitydeploy.parameters.json'
     deploymentMode: 'Incremental'
