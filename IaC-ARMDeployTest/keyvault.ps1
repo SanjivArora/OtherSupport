@@ -5,11 +5,11 @@
 Import-Module Az.KeyVault
 #write-host $environment
 #If {#($environment -eq 'DEV') {
-$KeyVault = "## TO BE DEFINED ##"
+$KeyVault = "kv-kxu-01"
 #HINT: KeyVault Name
 #}
 #Loading Default Secrets
-$secrets = Import-Csv '## TO BE DEFINED ##'
+$secrets = Import-Csv 'keyvault.csv'
 #HINT: Drop Location
 function New-RandomPassword() {
     param (
