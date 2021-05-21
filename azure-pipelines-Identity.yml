@@ -62,7 +62,7 @@ steps:
               $tmpsecret = Set-AzKeyVaultSecret -VaultName $KeyVault -Name $secret.name -SecretValue $tmpSecret
           }
           Else {
-              Write-Host "Secret is alrady in tne Key Vault. No change is required."
+              Write-Host "The secret is alrady in tne Key Vault. No change is required."
           }
       }
     azurePowerShellVersion: 'LatestVersion'
