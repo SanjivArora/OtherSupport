@@ -1,16 +1,10 @@
-#param (
-#    [string] $environment
-#)
-#Global
+
 Import-Module Az.KeyVault
-#write-host $environment
-#If {#($environment -eq 'DEV') {
-$KeyVault = "kv-kxu-01"
-#HINT: KeyVault Name
-#}
-#Loading Default Secrets
+
+$KeyVault = "kv-kxu-01'
+
 $secrets = Import-Csv 'keyvault.csv'
-#HINT: Drop Location
+
 function New-RandomPassword() {
     param (
         [int]$size
