@@ -32,4 +32,11 @@ steps:
     csmFile: '/home/vsts/work/1/a/identitydeploy.json'
     csmParametersFile: '/home/vsts/work/1/a/identitydeploy.parameters.json'
     deploymentMode: 'Incremental'
-    
+    - task: AzurePowerShell@5
+      inputs:
+        azureSubscription: 'SP_DevTestKXU'
+        ScriptType: 'FilePath'
+        ScriptPath: 'keyvault.ps1'
+        errorActionPreference: 'continue'
+        azurePowerShellVersion: 'LatestVersion'
+        pwsh: true
