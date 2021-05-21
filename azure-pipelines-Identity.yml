@@ -32,17 +32,3 @@ steps:
     csmFile: '/home/vsts/work/1/a/identitydeploy.json'
     csmParametersFile: '/home/vsts/work/1/a/identitydeploy.parameters.json'
     deploymentMode: 'Incremental'
-#- pwsh: keyvault.ps1
-#  workingDirectory:  '/home/vsts/work/1/a/'
-#  displayName:  Storage Account Keys export to KeyVault
-#  failOnStderr:  #
-#  errorActionPreference:  #
-#  ignoreLASTEXITCODE:  #
-- task: AzurePowerShell@5
-  displayName: Create Secrets in kv-kxu-01
-  inputs:
-    azureSubscription: 'Visual Studio Enterprise Subscription – MPN KXU'
-    ScriptType: 'FilePath'
-    ScriptPath: 'keyvault.ps1'
-    azurePowerShellVersion: 'LatestVersion'
-    pwsh: true
