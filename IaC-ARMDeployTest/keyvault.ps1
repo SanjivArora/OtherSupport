@@ -9,7 +9,7 @@ $KeyVault = "kv-kxu-01"
 #HINT: KeyVault Name
 #}
 #Loading Default Secrets
-$secrets = Import-Csv '_DevTestKXU - identity/Drop/keyvault.csv'
+$secrets = Import-Csv 'keyvault.csv'
 #HINT: Drop Location
 function New-RandomPassword() {
     param (
