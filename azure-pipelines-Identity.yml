@@ -40,3 +40,4 @@ steps:
     errorActionPreference: 'silentlyContinue'
     FailOnStandardError: true
     azurePowerShellVersion: 'LatestVersion'
+    pwsh: true
