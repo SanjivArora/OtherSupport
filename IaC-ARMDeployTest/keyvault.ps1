@@ -1,7 +1,7 @@
 
 Import-Module Az.KeyVault
 
-$KeyVault = "kv-kxu-01'
+$KeyVault = "kv-kxu-01"
 
 $secrets = Import-Csv 'keyvault.csv'
 
