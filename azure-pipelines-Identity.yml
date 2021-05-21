@@ -43,6 +43,8 @@ steps:
       
       $secrets = Import-Csv 'keyvault.csv'
       
+      add-type -AssemblyName System.Web
+
       function New-RandomPassword() {
           param (
               [int]$size
