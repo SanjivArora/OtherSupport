@@ -59,7 +59,7 @@
         "adminPassword": {
             "reference": {
                 "keyVault": {
-                    "id": "## TO BE DEFINED ##"
+                    "id": "kv-kxu-01"
                 },
                 "secretName": "AzAdministrator"
             }
