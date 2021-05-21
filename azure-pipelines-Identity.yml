@@ -32,11 +32,4 @@ steps:
     csmFile: '/home/vsts/work/1/a/identitydeploy.json'
     csmParametersFile: '/home/vsts/work/1/a/identitydeploy.parameters.json'
     deploymentMode: 'Incremental'
-- # task: AzurePowerShell@5
-  # inputs:
-  # azureSubscription: 'Visual Studio Enterprise Subscription – MPN KXU(c23ad7d1-9c6e-4c97-b9c6-758565617d5d)'
-  #  ScriptType: 'FilePath'
-  #  ScriptPath: 'keyvault.ps1'
-  #  errorActionPreference: 'silentlyContinue'
-  #  FailOnStandardError: true
-  #  azurePowerShellVersion: 'LatestVersion'
+    
