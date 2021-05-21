@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "australiaeast"
+        },
+        "networkInterfaceName": {
+            "value": "NIC01"
+        },
+        "subnetName": {
+            "value": "subnet-01"
+        },
+        "virtualNetworkName": {
+            "value": "vnet-01"
+        },
+        "VirtualNetworkResourceGroup": {  
+            "value": "rg-test-01" 
+        }, 
+        "addressPrefixes": {
+            "value": [
+                "10.0.0.0/16"
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "subnet-01",
+                    "properties": {
+                        "addressPrefix": "10.0.1.0/24"
+                    }
+                }
+            ]
+        },
+        "publicIpAddressName": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "test-computer-01"
+        },
+        "virtualMachineComputerName": {
+            "value": "test-computer-01"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B2s"
+        },
+        "adminUsername": {
+            "value": "AzAdministrator"
+        },
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "## TO BE DEFINED ##"
+                },
+                "secretName": "AzAdministrator"
+            }
+        },
+        "patchMode": {
+            "value": "AutomaticByOS"
+        },
+        "enableHotpatching": {
+            "value": false
+        },
+        "autoShutdownStatus": {
+            "value": "Disabled"
+        },
+        "autoShutdownTime": {
+            "value": "19:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "New Zealand Standard Time"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownNotificationLocale": {
+            "value": "en"
+        },
+        "autoShutdownNotificationEmail": {
+            "value": "true"
+        },
+        "resourceTags": {
+            "value": {
+                "Environment": "testenvironment",
+                "Application": "testapp"
+    }
+        }
+    }
+}

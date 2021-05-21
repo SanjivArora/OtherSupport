@@ -1,0 +1,44 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.1",
+    "parameters": {
+        "keyVaultName": {
+            "value": "kv-kxu-01"
+        },
+        "location": {
+            "value": "australiaeast"
+        },
+        "enabledForDeployment": {
+            "value": true
+        },
+        "enabledForDiskEncryption": {
+            "value": true
+        },
+        "enabledForTemplateDeployment": {
+            "value": true
+        },
+        "tenantId": {
+            "value": "07d38d82-95f9-4f5c-b158-7aecad51f34f"
+        },
+        "objectId": {
+            "value": "578c32c7-59aa-4736-83f7-4bd054bd3b2a"
+        },
+        "keysPermissions": {
+            "value": [
+                "list",
+                "get",
+                "create"
+            ]
+        },
+        "secretsPermissions": {
+            "value": [
+                "list",
+                "get",
+                "set"
+            ]
+        },
+        "skuName": {
+            "value": "Standard"
+        }
+    }
+}
