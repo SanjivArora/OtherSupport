@@ -32,6 +32,5 @@ steps:
     csmFile: '/home/vsts/work/1/a/identitydeploy.json'
     csmParametersFile: '/home/vsts/work/1/a/identitydeploy.parameters.json'
     deploymentMode: 'Incremental'
-- task: PowerShell@2
-  inputs:
-    filePath: '/home/vsts/work/1/a/keyvault.ps1'
+steps:
+- powershell: .\keyvault.ps1
