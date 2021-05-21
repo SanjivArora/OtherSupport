@@ -59,9 +59,9 @@
         "adminPassword": {
             "reference": {
                 "keyVault": {
-                    "id": "kv-kxu-01"
+                    "id": "/subscriptions/c23ad7d1-9c6e-4c97-b9c6-758565617d5d/resourceGroups/IaC-ARMDeployTest-RG/providers/Microsoft.KeyVault/vaults/kv-kxu-01"
                 },
-                "secretName": "AzAdministrator"
+                "secretName": "kvkxu"
             }
         },
         "patchMode": {
