@@ -2,7 +2,7 @@ Import-Module Az.KeyVault
 
 $KeyVault = "kv-kxu-01"
 
-$secrets = Import-Csv '/home/vsts/work/1/a/keyvault.csv'
+$secrets = Import-Csv '_DEVTestKXU-Identity/Drop/keyvault.csv'
 
 function New-RandomPassword() {
     param (
