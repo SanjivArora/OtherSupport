@@ -41,7 +41,7 @@
       "properties": {}
     },
     {
-      "type": "Microsoft.Network/dnszones/a",
+      "type": "Microsoft.Network/Privatednszones/a",
       "name": "[concat(parameters('newZoneName'), '/', parameters('newRecordName'))]",
       "location": "global",
       "dependsOn": [
