@@ -64,7 +64,8 @@
   "outputs": {
     "nameServers": {
       "type": "array",
-      "value": "[concat(uniqueString(resourceGroup().id), '.azurestackquickstart.org')]"
+      "value": "[reference(parameters('newZoneName'))]"
+
     }
   }
 }
