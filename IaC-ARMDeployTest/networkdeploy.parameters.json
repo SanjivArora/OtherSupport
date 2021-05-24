@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "newZoneName": {
-            "value": ".Blair.Ken"
+            "value": "[concat(uniqueString(resourceGroup().id), '.Blair.Ken')]"
         },
         "newRecordName": {
             "value": "WWW"
