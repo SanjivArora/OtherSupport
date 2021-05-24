@@ -34,15 +34,15 @@
   },
   "resources": [
     {
-      "type": "Microsoft.Network/dnszones",
-      "apiVersion": "2018-09-01",
+      "type": "Microsoft.Network/dnsZones",
+      "apiVersion": "2018-05-01",
       "name": "[parameters('newZoneName')]",
       "location": "global",
       "properties": {}
     },
     {
-      "type": "Microsoft.Network/dnszones/a",
-      "apiVersion": "2018-09-01",
+      "type": "Microsoft.Network/dnsZones/A",
+      "apiVersion": "2018-05-01",
       "name": "[concat(parameters('newZoneName'), '/', parameters('newRecordName'))]",
       "location": "global",
       "dependsOn": [
