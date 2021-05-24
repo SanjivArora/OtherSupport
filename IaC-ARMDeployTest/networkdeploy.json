@@ -64,7 +64,7 @@
   "outputs": {
     "nameServers": {
       "type": "array",
-      "value": "[reference(parameters('newZoneName')).nameServers]"
+      "value": "[reference(parameters('newZoneName'))]"
     }
   }
 }
