@@ -6,16 +6,16 @@
             "value": "australiaeast"
         },
         "networkInterfaceName": {
-            "value": "NIC01"
+            "value": "wks-vm-01-nic"
         },
         "subnetName": {
-            "value": "subnet-01"
+            "value": "vsubnet-01"
         },
         "virtualNetworkName": {
             "value": "vnet-01"
         },
         "VirtualNetworkResourceGroup": {  
-            "value": "rg-test-01" 
+            "value": "IaC-ARMDeployTest-RG" 
         }, 
         "addressPrefixes": {
             "value": [
@@ -25,7 +25,7 @@
         "subnets": {
             "value": [
                 {
-                    "name": "subnet-01",
+                    "name": "vsubnet-01",
                     "properties": {
                         "addressPrefix": "10.0.1.0/24"
                     }
@@ -33,19 +33,19 @@
             ]
         },
         "publicIpAddressName": {
-            "value": "## TO BE DEFINED ##"
+            "value": ""
         },
         "publicIpAddressType": {
-            "value": "Dynamic"
+            "value": ""
         },
         "publicIpAddressSku": {
-            "value": "Basic"
+            "value": ""
         },
         "virtualMachineName": {
-            "value": "test-computer-01"
+            "value": "wks-vm-01"
         },
         "virtualMachineComputerName": {
-            "value": "test-computer-01"
+            "value": "wks-vm-01"
         },
         "osDiskType": {
             "value": "Standard_LRS"
@@ -54,14 +54,14 @@
             "value": "Standard_B2s"
         },
         "adminUsername": {
-            "value": "Computeradminkxu"
+            "value": "wkslocaladmin"
         },
         "adminPassword": {
             "reference": {
                 "keyVault": {
                     "id": "/subscriptions/c23ad7d1-9c6e-4c97-b9c6-758565617d5d/resourceGroups/IaC-ARMDeployTest-RG/providers/Microsoft.KeyVault/vaults/kv-kxu-01"
                 },
-                "secretName": "Computeradminkxu"
+                "secretName": "wkslocaladmin"
             }
         },
         "patchMode": {
