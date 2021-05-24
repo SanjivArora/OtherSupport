@@ -34,14 +34,14 @@
   },
   "resources": [
     {
-      "type": "Microsoft.Network/Privatednszones",
+      "type": "Microsoft.Network/dnszones",
       "apiVersion": "2018-09-01",
       "name": "[parameters('newZoneName')]",
       "location": "global",
       "properties": {}
     },
     {
-      "type": "Microsoft.Network/Privatednszones/a",
+      "type": "Microsoft.Network/dnszones/a",
       "apiVersion": "2018-09-01",
       "name": "[concat(parameters('newZoneName'), '/', parameters('newRecordName'))]",
       "location": "global",
@@ -62,10 +62,9 @@
     }
   ],
   "outputs": {
-    "nameServers": {
-      "type": "array",
-      "value": "[reference(parameters('newZoneName'))]"
-
+     "nameServers": {
+       "type": "array",
+       "value": "[reference(parameters('newZoneName')).nameServers]"
     }
   }
 }
