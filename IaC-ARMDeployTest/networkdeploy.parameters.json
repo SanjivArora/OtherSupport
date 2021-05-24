@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "newZoneName": {
-            "value": "Blair.Ken"
+            "value": "Blair.Ken.Org"
         },
         "newRecordName": {
-            "value": "www"
+            "value": "WWW"
         },
         "firstRecordIPAddress": {
             "value": "10.0.1.11"
