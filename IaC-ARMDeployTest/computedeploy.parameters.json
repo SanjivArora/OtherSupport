@@ -51,7 +51,7 @@
             "value": "Standard_LRS"
         },
         "virtualMachineSize": {
-            "value": "Standard_D2s_V3"
+            "value": "Standard_D2a_V4"
         },
         "adminUsername": {
             "value": "wkslocaladmin"
