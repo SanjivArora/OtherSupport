@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+      "vnetName": {
+          "value": "VNet1"
+      },
+      "vnetAddressPrefix": {
+          "value": "10.0.0.0/16"
+      },
+      "subnet1Prefix": {
+          "value": "10.0.0.0/24"
+      },
+      "subnet1Name": {
+          "value": "Subnet1"
+      },
+      "subnet2Prefix": {
+          "value": "10.0.1.0/24"
+      },
+      "subnet2Name": {
+          "value": "Subnet2"
+      },
+      "nsgName": {
+        "value": "## To Be Defined"
+  }
+}
+
+}
+
+"variables": {
+  "nicName": "myNic",
+  "publicIPAddressName": "myPubIP",
+  "vnetName": "myVNet",
+  "nsgName": "myNsg",
+  "nsgID": "[resourceId('Microsoft.Network/networkSecurityGroups',variables('nsgName'))]",
+  "addressPrefix": "10.0.0.0/24",
+  "subnetName": "Subnet-1",
+  "subnetPrefix": "10.0.0.0/24",
+  "publicIPAddressType": "Dynamic",
+  "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('vnetName'))]",
+  "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables ('subnetName'))]",    
+  "numberOfInstances": 1
+}
+}
