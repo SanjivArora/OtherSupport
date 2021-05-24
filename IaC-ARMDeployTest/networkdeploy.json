@@ -64,7 +64,7 @@
   "outputs": {
     "nameServers": {
       "type": "array",
-      "value": "[concat(uniqueString(resourceGroup().id), '.azurestackquickstart.org')]",
+      "value": "[concat(uniqueString(resourceGroup().id), '.azurestackquickstart.org')]"
     }
   }
 }
