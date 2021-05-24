@@ -6,13 +6,13 @@
             "value": "australiaeast"
         },
         "networkInterfaceName": {
-            "value": "wks-vm-01-nic"
+            "value": "wksvm01nic"
         },
         "subnetName": {
-            "value": "vsubnet-01"
+            "value": "vsubnet01"
         },
         "virtualNetworkName": {
-            "value": "vnet-01"
+            "value": "vnet01"
         },
         "VirtualNetworkResourceGroup": {  
             "value": "IaC-ARMDeployTest-RG" 
@@ -25,7 +25,7 @@
         "subnets": {
             "value": [
                 {
-                    "name": "vsubnet-01",
+                    "name": "vsubnet01",
                     "properties": {
                         "addressPrefix": "10.0.1.0/24"
                     }
@@ -42,10 +42,10 @@
             "value": ""
         },
         "virtualMachineName": {
-            "value": "wks-vm-01"
+            "value": "wksvm01"
         },
         "virtualMachineComputerName": {
-            "value": "wks-vm-01"
+            "value": "wksvm01"
         },
         "osDiskType": {
             "value": "Standard_LRS"
