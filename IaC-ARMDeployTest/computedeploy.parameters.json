@@ -33,13 +33,13 @@
             ]
         },
         "publicIpAddressName": {
-            "value": ""
+            "value": "None"
         },
         "publicIpAddressType": {
-            "value": ""
+            "value": " "
         },
         "publicIpAddressSku": {
-            "value": ""
+            "value": " "
         },
         "virtualMachineName": {
             "value": "wksvm01"
