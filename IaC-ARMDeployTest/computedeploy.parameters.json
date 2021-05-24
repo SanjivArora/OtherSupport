@@ -36,10 +36,10 @@
             "value": "None"
         },
         "publicIpAddressType": {
-            "value": " "
+            "value": "Dynamic"
         },
         "publicIpAddressSku": {
-            "value": " "
+            "value": "Basic"
         },
         "virtualMachineName": {
             "value": "wksvm01"
