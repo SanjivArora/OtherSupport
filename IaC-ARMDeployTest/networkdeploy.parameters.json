@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "newZoneName": {
-            "value": "Blair.Ken.Org"
+            "value": ".Blair.Ken"
         },
         "newRecordName": {
             "value": "WWW"
