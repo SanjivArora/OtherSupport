@@ -42,6 +42,7 @@
     },
     {
       "type": "Microsoft.Network/Privatednszones/a",
+      "apiVersion": "2018-09-01",
       "name": "[concat(parameters('newZoneName'), '/', parameters('newRecordName'))]",
       "location": "global",
       "dependsOn": [
