@@ -1,0 +1,81 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vaultName": {
+            "type": "String",
+            "metadata": {
+                "description": "Name of the Vault"
+            }
+        },
+        "location": {
+            "defaultValue": "[resourceGroup().location]",
+            "type": "String",
+            "metadata": {
+                "description": "Location for all resources. Defaults to the resource group location."
+            }
+        },
+        "storageType": {
+            "type": "String",
+            "metadata": {
+                "description": "Backup storage redundancy"
+            }
+        },
+        "laWorkspaceId": {
+            "type": "String",
+            "metadata": {
+                "description": "Log Analytics workspace to be used for diagnostics"
+            }
+        }
+    },
+    "variables": {
+        "laWorkspaceName": "[if(empty(parameters('laWorkspaceId')), 'default', last(split(parameters('laWorkspaceId'), '/')))]"
+    },
+    "resources": [
+        {
+            "type": "Microsoft.DataProtection/BackupVaults",
+            "apiVersion": "2021-01-01",
+            "name": "[parameters('vaultName')]",
+            "location": "[parameters('location')]",
+            "tags": {},
+            "sku": {
+                "name": "RS0",
+                "tier": "Standard"
+            },
+            "identity": {
+                "type": "SystemAssigned"
+            },
+            "properties": {
+                "storageSettings": [
+                    {
+                        "datastoreType": "VaultStore",
+                        "type": "[parameters('storageType')]"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Microsoft.DataProtection/BackupVaults/providers/diagnosticSettings",
+            "apiVersion": "2017-05-01-preview",
+            "name": "[concat(parameters('vaultName'), '/microsoft.insights/', variables('laWorkspaceName'))]",
+            "dependsOn": [
+                "[resourceId('Microsoft.DataProtection/BackupVaults', parameters('vaultName'))]"
+            ],
+            "properties": {
+                "workspaceId": "[parameters('laWorkspaceId')]",
+                "logs": [
+                    {
+                        "category": "AzureBackupReport",
+                        "enabled": true,
+                        "retentionPolicy": {
+                            "days": 0,
+                            "enabled": false
+                        }
+                    }
+                ],
+                "metrics": []
+            },
+            "condition": "[not(empty(parameters('laWorkspaceId')))]"
+        }
+    ]
+}
