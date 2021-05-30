@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vaultName": {
-            "value": "bv-kxu-01"
+            "value": "bv-kxu-test-01"
         },
         "location": {
             "value": "australiaeast"
