@@ -3,16 +3,16 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vaultName": {
-            "value": "bv-kxu-test-01"
+            "value": "## TO BE DEFINED ##"
         },
         "location": {
-            "value": "australiaeast"
+            "value": "## TO BE DEFINED ##"
         },
         "storageType": {
-            "value": "LocallyRedundant"
+            "value": "## TO BE DEFINED ##"
         },
         "laWorkspaceId": {
-            "value": ""
+            "value": "## TO BE DEFINED ##"
         }
     }
 }
