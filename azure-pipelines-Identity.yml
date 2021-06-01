@@ -31,4 +31,4 @@ steps:
     templateLocation: 'Linked artifact'
     csmFile: '/home/vsts/work/1/a/identitydeploy.json'
     csmParametersFile: '/home/vsts/work/1/a/identitydeploy.parameters.json'
-    deploymentMode: 'Incremental'
+    deploymentMode: 'Complete'
