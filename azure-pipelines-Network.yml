@@ -31,4 +31,4 @@ steps:
     templateLocation: 'Linked artifact'
     csmFile: '/home/vsts/work/1/a/networkdeploy.json'
     csmParametersFile: '/home/vsts/work/1/a/networkdeploy.parameters.json'
-    deploymentMode: 'Complete'
+    deploymentMode: 'Incremental'
