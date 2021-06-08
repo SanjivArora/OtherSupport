@@ -1,0 +1,54 @@
+;
+;  Database file getmodern.co.nz.dns for Default zone scope in zone getmodern.co.nz.
+;      Zone version:  47
+;
+
+@                       IN  SOA gtm-dc-01.getmodern.co.nz. hostmaster.getmodern.co.nz. (
+                        		47           ; serial number
+                        		900          ; refresh
+                        		600          ; retry
+                        		86400        ; expire
+                        		3600       ) ; default TTL
+
+;
+;  Zone NS records
+;
+
+@                       NS	gtm-dc-01.getmodern.co.nz.
+
+;
+;  Zone records
+;
+
+@                       600	A	192.168.6.250
+_kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs 600	SRV	0 100 88	gtm-dc-01.getmodern.co.nz.
+_ldap._tcp.Default-First-Site-Name._sites.dc._msdcs 600	SRV	0 100 389	gtm-dc-01.getmodern.co.nz.
+_kerberos._tcp.dc._msdcs 600	SRV	0 100 88	gtm-dc-01.getmodern.co.nz.
+_ldap._tcp.dc._msdcs    600	SRV	0 100 389	gtm-dc-01.getmodern.co.nz.
+_ldap._tcp.38170964-da24-40ec-a7a8-d08448275e5d.domains._msdcs 600	SRV	0 100 389	gtm-dc-01.getmodern.co.nz.
+e3cd7f35-7125-40a9-911c-f4e5afeb0d19._msdcs 600	CNAME	gtm-dc-01.getmodern.co.nz.
+gc._msdcs               600	A	192.168.6.250
+_ldap._tcp.Default-First-Site-Name._sites.gc._msdcs 600	SRV	0 100 3268	gtm-dc-01.getmodern.co.nz.
+_ldap._tcp.gc._msdcs    600	SRV	0 100 3268	gtm-dc-01.getmodern.co.nz.
+_ldap._tcp.pdc._msdcs   600	SRV	0 100 389	gtm-dc-01.getmodern.co.nz.
+_gc._tcp.Default-First-Site-Name._sites 600	SRV	0 100 3268	gtm-dc-01.getmodern.co.nz.
+_kerberos._tcp.Default-First-Site-Name._sites 600	SRV	0 100 88	gtm-dc-01.getmodern.co.nz.
+_ldap._tcp.Default-First-Site-Name._sites 600	SRV	0 100 389	gtm-dc-01.getmodern.co.nz.
+_gc._tcp                600	SRV	0 100 3268	gtm-dc-01.getmodern.co.nz.
+_kerberos._tcp          600	SRV	0 100 88	gtm-dc-01.getmodern.co.nz.
+_kpasswd._tcp           600	SRV	0 100 464	gtm-dc-01.getmodern.co.nz.
+_ldap._tcp              600	SRV	0 100 389	gtm-dc-01.getmodern.co.nz.
+_kerberos._udp          600	SRV	0 100 88	gtm-dc-01.getmodern.co.nz.
+_kpasswd._udp           600	SRV	0 100 464	gtm-dc-01.getmodern.co.nz.
+DomainDnsZones          600	A	192.168.6.250
+_ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones 600	SRV	0 100 389	gtm-dc-01.getmodern.co.nz.
+_ldap._tcp.DomainDnsZones 600	SRV	0 100 389	gtm-dc-01.getmodern.co.nz.
+ForestDnsZones          600	A	192.168.6.250
+_ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones 600	SRV	0 100 389	gtm-dc-01.getmodern.co.nz.
+_ldap._tcp.ForestDnsZones 600	SRV	0 100 389	gtm-dc-01.getmodern.co.nz.
+gtm-dc-01               A	192.168.6.250
+GTM-HY-6qh76AsK         1200	A	192.168.6.14
+GTM-HY-M92o8nav         1200	A	192.168.6.14
+GTM-HY-nI0RjSme         1200	A	192.168.6.14
+GTM-HY-wEu3NQ8m         1200	A	192.168.6.14
+GTM-LP-001              1200	A	192.168.6.14
