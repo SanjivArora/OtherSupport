@@ -1,0 +1,34 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/IaC-ARMDeployTest'
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'SP_DevTestKXU'
+    subscriptionId: 'c23ad7d1-9c6e-4c97-b9c6-758565617d5d'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'IaC-ARMDeployTest-RG'
+    location: 'Australia East'
+    templateLocation: 'Linked artifact'
+    csmFile: '/home/vsts/work/1/a/privateDNSzonedeploy.json'
+    csmParametersFile: '/home/vsts/work/1/a/privateDNSzonedeploy.parameters.json'
+    deploymentMode: 'Incremental'
