@@ -1,1 +1,0 @@
-Place here the ARM template file and parameter file you wish to test on thi pipeline.
