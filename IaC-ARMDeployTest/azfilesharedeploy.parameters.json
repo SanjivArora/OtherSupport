@@ -6,13 +6,10 @@
             "value": "sadeployv4fqeomjpm3uw"
         },
         "sharePrefix": {
-            "value": "azfileshare"
+            "value": "azfs"
         },
         "location": {
             "value": "australiaeast"
-        },
-        "shareCopy": {
-            "value": "1"
         }
     }
 }
