@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccountName": {
-            "value": "## TO BE DEFINED ##"
+            "value": "sadeployv4fqeomjpm3uw"
         },
         "sharePrefix": {
             "value": "azfileshare"
         },
         "location": {
-            "value": "## TO BE DEFINED ##"
+            "value": "australiaeast"
         },
         "shareCopy": {
             "value": "1"
