@@ -6,13 +6,13 @@
             "value": "## TO BE DEFINED ##"
         },
         "sharePrefix": {
-            "value": "## TO BE DEFINED ##"
+            "value": "azfileshare"
         },
         "location": {
             "value": "## TO BE DEFINED ##"
         },
         "shareCopy": {
-            "value": "## TO BE DEFINED ##"
+            "value": "1"
         }
     }
 }
