@@ -29,6 +29,6 @@ steps:
     resourceGroupName: 'IaC-ARMDeployTest-RG'
     location: 'Australia East'
     templateLocation: 'Linked artifact'
-    csmFile: '/home/vsts/work/1/a/azfilesharedeploy.json'
-    csmParametersFile: '/home/vsts/work/1/a/azfilesharedeploy.parameters.json'
+    csmFile: '/home/vsts/work/1/a/azsadeploy.json'
+    csmParametersFile: '/home/vsts/work/1/a/azsadeploy.parameters.json'
     deploymentMode: 'Incremental'
