@@ -6,7 +6,7 @@
             "value": "australiaeast"
         },
         "storageAccountName": {
-            "value": "armtemplatesafs"
+            "value": "armtemplatesafs001"
         },
         "accountType": {
             "value": "Standard_LRS"
