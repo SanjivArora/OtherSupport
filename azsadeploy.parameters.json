@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storagePrefix": {
-            "value": "## TO BE DEFINED ##"
+            "value": "azsa4fs"
         },
         "storageSKU": {
             "value": "Standard_LRS"
