@@ -29,6 +29,6 @@ steps:
     resourceGroupName: 'IaC-ARMDeployTest-RG'
     location: 'Australia East'
     templateLocation: 'Linked artifact'
-    csmFile: '/home/vsts/work/1/a/destory.json'
-    csmParametersFile: '/home/vsts/work/1/a/destory.parameters.json'
+    csmFile: '/home/vsts/work/1/a/destroy.json'
+    csmParametersFile: '/home/vsts/work/1/a/destroy.parameters.json'
     deploymentMode: 'Complete'
