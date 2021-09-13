@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccountName": {
-            "value": "sadeployv4fqeomjpm3uw"
+            "value": "azuresav4fqeomjpm3uw"
         },
         "sharePrefix": {
-            "value": "azfs"
+            "value": "azfs0001"
         },
         "location": {
             "value": "australiaeast"
