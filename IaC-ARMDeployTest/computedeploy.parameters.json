@@ -6,46 +6,46 @@
             "value": "australiaeast"
         },
         "networkInterfaceName": {
-            "value": "## TO BE DEFINED ##"
+            "value": "svr01-nic"
         },
         "subnetName": {
-            "value": "## TO BE DEFINED ##"
+            "value": "sunet2"
         },
         "virtualNetworkName": {
-            "value": "## TO BE DEFINED ##"
+            "value": "vnet1"
         },
         "VirtualNetworkResourceGroup": {  
-            "value": "## TO BE DEFINED ##" 
+            "value": "IaC-ARMDeployTest-RG" 
         }, 
         "addressPrefixes": {
             "value": [
-                "## TO BE DEFINED ##"
+                "10.10.0.0/16"
             ]
         },
         "subnets": {
             "value": [
                 {
-                    "name": "## TO BE DEFINED ##",
+                    "name": "subnet2",
                     "properties": {
-                        "addressPrefix": "## TO BE DEFINED ##"
+                        "addressPrefix": "10.10.11.0/24"
                     }
                 }
             ]
         },
         "publicIpAddressName": {
-            "value": "## TO BE DEFINED ##"
+            "value": "svr01-pip"
         },
         "publicIpAddressType": {
-            "value": "Dynamic"
+            "value": "static"
         },
         "publicIpAddressSku": {
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "## TO BE DEFINED ##"
+            "value": "svr01"
         },
         "virtualMachineComputerName": {
-            "value": "## TO BE DEFINED ##"
+            "value": "svr01"
         },
         "osDiskType": {
             "value": "Standard_LRS"
@@ -54,14 +54,14 @@
             "value": "Standard_A2_v2"
         },
         "adminUsername": {
-            "value": "## TO BE DEFINED ##"
+            "value": "locadm"
         },
         "adminPassword": {
             "reference": {
                 "keyVault": {
-                    "id": "## TO BE DEFINED ##"
+                    "id": "/subscriptions/c23ad7d1-9c6e-4c97-b9c6-758565617d5d/resourceGroups/IaC-ARMDeployTest-RG/providers/Microsoft.KeyVault/vaults/kv-kxu-01"
                 },
-                "secretName": "## TO BE DEFINED ##"
+                "secretName": "locadm01"
             }
         },
         "patchMode": {
@@ -86,12 +86,12 @@
             "value": "en"
         },
         "autoShutdownNotificationEmail": {
-            "value": "## TO BE DEFINED ##"
+            "value": "kxu@its.ricoh.co.nz"
         },
         "resourceTags": {
             "value": {
-                "Environment": "## TO BE DEFINED ##",
-                "Application": "## TO BE DEFINED ##"
+                "Environment": "UAT",
+                "Application": "Server"
     }
         }
     }
