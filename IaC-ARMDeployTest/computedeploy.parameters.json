@@ -9,7 +9,7 @@
             "value": "svr01-nic"
         },
         "subnetName": {
-            "value": "sunet2"
+            "value": "subnet2"
         },
         "virtualNetworkName": {
             "value": "vnet1"
