@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "australiaeast"
+        },
+        "networkInterfaceName": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "subnetName": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "virtualNetworkName": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "VirtualNetworkResourceGroup": {  
+            "value": "## TO BE DEFINED ##" 
+        }, 
+        "addressPrefixes": {
+            "value": [
+                "## TO BE DEFINED ##"
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "## TO BE DEFINED ##",
+                    "properties": {
+                        "addressPrefix": "## TO BE DEFINED ##"
+                    }
+                }
+            ]
+        },
+        "publicIpAddressName": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "virtualMachineComputerName": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_A2_v2"
+        },
+        "adminUsername": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "## TO BE DEFINED ##"
+                },
+                "secretName": "## TO BE DEFINED ##"
+            }
+        },
+        "patchMode": {
+            "value": "AutomaticByOS"
+        },
+        "enableHotpatching": {
+            "value": false
+        },
+        "autoShutdownStatus": {
+            "value": "Disabled"
+        },
+        "autoShutdownTime": {
+            "value": "19:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "New Zealand Standard Time"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownNotificationLocale": {
+            "value": "en"
+        },
+        "autoShutdownNotificationEmail": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "resourceTags": {
+            "value": {
+                "Environment": "## TO BE DEFINED ##",
+                "Application": "## TO BE DEFINED ##"
+    }
+        }
+    }
+}
