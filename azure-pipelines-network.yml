@@ -8,7 +8,7 @@ resources:
   - pipeline: 'DEVTestKXU - Network' # Name of the pipeline resource
     source: 'DEVTestKXU - Identity' # Name of the pipeline referenced by the pipeline resource
     project: RicohRAP # Required only if the source pipeline is in another project
-    trigger: true # Run 'DEVTestKXU - Network' pipeline when any run of 'DEVTestKXU - Identity' completes
+    trigger:  # Run 'DEVTestKXU - Network' pipeline when any run of 'DEVTestKXU - Identity' completes
 
 pool:
   vmImage: 'ubuntu-latest'
