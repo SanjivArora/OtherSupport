@@ -7,7 +7,6 @@ resources:
   pipelines:
   - pipeline: DEVTestKXU-Compute # Name of the pipeline resource
     source: DEVTestKXU-Network # Name of the pipeline referenced by the pipeline resource
-    project:
     trigger: true
 
 pool:
