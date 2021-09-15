@@ -1,0 +1,49 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "functions": [],
+    "variables": {},
+    "resources": [
+   {
+       "name": "storageaccount1",
+       "type": "Microsoft.Storage/storageAccounts",
+       "apiVersion": "2021-04-01",
+       "tags": {
+           "displayName": "storageaccount1"
+       },
+       "location": "[resourceGroup().location]",
+       "kind": "FileStorage",
+       "sku": {
+           "name": "Premium_LRS",
+           "tier": "Premium"
+       }
+   },
+   {
+        "type": "Microsoft.Storage/storageAccounts/fileServices/shares",
+        "apiVersion": "2021-04-01",
+        "name": "string",
+        "properties": {
+            "accessTier": "string",
+            "enabledProtocols": "string",
+            "metadata": {},
+            "rootSquash": "string",
+            "shareQuota": "int",
+            "signedIdentifiers": [
+            {
+                "accessPolicy": {
+                "expiryTime": "string",
+                "permission": "string",
+                "startTime": "string"
+                },
+                "id": "string"
+                }
+        ]
+            }
+    },
+    {
+        "type": "Microsoft.Storage/storageAccounts/fileServices"
+    }
+    ],
+    "outputs": {}
+}
