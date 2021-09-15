@@ -197,7 +197,7 @@
       {
          "name":"[concat('shutdown-computevm-', parameters('virtualMachineName'))]",
          "type":"Microsoft.DevTestLab/schedules",
-         "apiVersion":"2017-04-26-preview",
+         "apiVersion": "2018-09-15",
          "location":"[parameters('location')]",
          "dependsOn":[
             "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachineName'))]"
