@@ -8,7 +8,7 @@ resources:
   - pipeline: DEVTestKXU-Compute # Name of the pipeline resource
     source: DEVTestKXU-Network # Name of the pipeline referenced by the pipeline resource
     project:
-    trigger:
+    trigger: true
 
 pool:
   vmImage: 'ubuntu-latest'
