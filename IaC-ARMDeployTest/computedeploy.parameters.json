@@ -6,7 +6,7 @@
             "value": "australiaeast"
         },
         "networkInterfaceName": {
-            "value": "svr01-nic"
+            "value": "server01-nic"
         },
         "subnetName": {
             "value": "subnet2"
@@ -33,7 +33,7 @@
             ]
         },
         "publicIpAddressName": {
-            "value": "svr01-pip"
+            "value": "server01-pip"
         },
         "publicIpAddressType": {
             "value": "static"
@@ -42,10 +42,10 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "svr01"
+            "value": "server01"
         },
         "virtualMachineComputerName": {
-            "value": "svr01"
+            "value": "server01"
         },
         "osDiskType": {
             "value": "Standard_LRS"
