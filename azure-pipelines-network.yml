@@ -3,11 +3,8 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-resources:
-  pipelines:
-  - pipeline: DEVTestKXU-Network # Name of the pipeline resource
-    source: DEVTestKXU-Identity # Name of the pipeline referenced by the pipeline resource
-    trigger: true
+trigger:
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
