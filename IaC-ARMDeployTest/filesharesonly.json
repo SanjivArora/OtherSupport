@@ -4,7 +4,7 @@
     "parameters": {
         "storageAccountName": {
             "type": "string",
-            "defaultValue": "[concat('storage', uniqueString(resourceGroup().id))]",
+            "defaultValue": "[concat('azuresa', uniqueString(resourceGroup().id))]",
             "metadata": {
                 "description": "Specifies the name of the Azure Storage account."
             }
