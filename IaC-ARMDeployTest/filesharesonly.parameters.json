@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccountName": {
-            "value": "^([a-z]{6})"
+            "value": "^[a-z]{6}"
             },
         "sharePrefix": {
             "value": "azfs000"
